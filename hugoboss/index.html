@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="gb2312">
+    <meta http-equiv="Content-Type" content="text/html;" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no; email=no" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="viewport" content="width=640,user-scalable=no,target-densitydpi=device-dpi">
+    <meta name="keywords" content="<%global.metakeyword%>">
+    <meta name="description" content="<%global.metadescription%>">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css?2019111803">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/html2canvas.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/canvas2image.js"></script>
+    <script src="js/index.js?2019111803"></script>
+</head>
+<body>
+    <div class="step1">
+        <div class="step1_con">
+            <img class="step1_man" onclick="choseSex('man')" src="img/man.png" alt="">
+            <img class="step1_women" onclick="choseSex('women')" src="img/women.png" alt="">
+        </div>
+    </div>
+    <div class="step2">
+        <div class="step2_con">
+            <div class="step2_con1 ">
+                <img class="step2_poker1 step2_poker1_anima step2_poker" onclick="pickPoker()" src="img/poker_bg.png" alt="">
+                <img class="step2_poker2 step2_poker2_anima step2_poker" onclick="pickPoker()" src="img/poker_bg.png" alt="">
+            </div>
+            <div class="step2_con2">
+                <img class="step2_poker3 step2_poker3_anima step2_poker" onclick="pickPoker()" src="img/poker_bg.png" alt="">
+            </div>
+            <div class="step2_con3"> 
+                <img class="step2_poker4 step2_poker4_anima step2_poker" onclick="pickPoker()" src="img/poker_bg.png" alt="">
+                <img class="step2_poker5 step2_poker5_anima step2_poker" onclick="pickPoker()" src="img/poker_bg.png" alt="">
+            </div>
+            <div class="step2_text">
+                <img src="img/step2_text.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="step3">
+        <div class="step3_con">
+            <img id="chosedPoker" onclick="goStep4()" src="" alt="">
+            <div>
+                    <img class="step3_text" src="img/step3_text.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <div class="step4"  id="p9">
+        <div class="step4_bg">
+            <div>
+                <img id="step4Poker" class="step4_img1" src="" alt="">
+            </div>
+            <div >
+                <img  id='makeImage' class="step4_img2" src="img/step4_btn.png" alt="">
+            </div>
+            <div>
+                <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MDY4NzY3Mw==&scene=124#wechat_redirect">
+                    <img id="step4Shop" class="step4_img3" src="img/man/manimg6.jpg" alt="">
+                </a>
+            </div>
+            <div class="step_text2">
+                <p id='shopTitle'>动物印花旅行包</p>
+                <p id="clicksigle">
+                    <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MDY4NzY3Mw==&scene=124#wechat_redirect">点击单品</a>
+                    <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MDY4NzY3Mw==&scene=124#wechat_redirect">了解更多</a>
+                </p>
+            </div>
+            <div>
+                <img class="step4_img4" src="img/step4_logo.png" alt="">
+            </div>
+            <div>
+                <img class="step4_img5" src="img/step4_saoyisao.png" alt="">
+            </div>
+            <img class="step4_saoyisao" src="img/erweima.png" alt="">
+           
+        </div>
+        <div id="showBox" class="hide">
+            <div>
+                <div>
+                	<div class="changan">长按保存你的助运专属</div>
+                    <div id="picImg">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loading" class="hide">
+       <div>
+           <div class="imgbox">
+               <div class="pulse-bubble pulse-bubble-1"></div>
+               <div class="pulse-bubble pulse-bubble-2"></div>
+               <div class="pulse-bubble pulse-bubble-3"></div>
+           </div>
+       </div>
+   </div>
+    <div id="drawCanvas"></div>
+</body>
+</html>
